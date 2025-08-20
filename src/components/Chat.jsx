@@ -4,7 +4,7 @@ export default function Chat() {
   const [messages, setMessages] = useState([
     { id: 1, text: "Hej från ilja123!!", user: "ilja123", avatar: "https://i.pravatar.cc/50?img=1" },
     { id: 2, text: "Testar ännu en gång", user: "ilja123", avatar: "https://i.pravatar.cc/50?img=2" },
-    { id: 3, text: "Hallå! Jag är en annan användare 😎", user: "guest", avatar: "https://i.pravatar.cc/50?img=5" },
+    { id: 3, text: "Hallå! Jag är en annan användare ", user: "guest", avatar: "https://i.pravatar.cc/50?img=5" },
   ]);
   const [newMessage, setNewMessage] = useState("");
 

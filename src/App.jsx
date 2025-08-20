@@ -11,7 +11,7 @@ function App() {
       <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white px-4">
         <div className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl text-center max-w-md w-full">
           <h1 className="text-4xl font-extrabold mb-6 drop-shadow-lg">
-            🎉 Välkommen till Chat App
+             Välkommen till Chat App
           </h1>
           <img
             src={user.avatar || "https://i.pravatar.cc/200"}
