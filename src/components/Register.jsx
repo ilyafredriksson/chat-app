@@ -44,7 +44,7 @@ function Register() {
         setError(data.message || "Registrering misslyckades");
         return;
       }
-      setSuccess("✅ Registrering lyckades! Du skickas vidare till inloggning...");
+      setSuccess(" Registrering lyckades! Du skickas vidare till inloggning...");
       setTimeout(() => navigate("/login"), 1500);
     } catch {
       setError("Något gick fel vid registrering.");

@@ -14,8 +14,8 @@ function SideNav() {
   };
 
   const menuItems = [
-    { path: "/chat", label: "📩 Chat" },
-    { path: "/profile", label: "👤 Profil" },
+    { path: "/chat", label: " Chat" },
+    { path: "/profile", label: " Profil" },
   ];
 
   return (
@@ -55,7 +55,7 @@ function SideNav() {
         onClick={logout}
         className="mt-auto px-4 py-2 bg-red-600 rounded-lg hover:bg-red-700 transition"
       >
-        🚪 Logga ut
+         Logga ut
       </button>
     </div>
   );
