@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 
 function App() {
-  const user = JSON.parse(localStorage.getItem("user") || "null");
-  const token = localStorage.getItem("token");
+  const user = JSON.parse(sessionStorage.getItem("user") || "null");
+  const token = sessionStorage.getItem("token");
   const navigate = useNavigate();
 
   if (user && token) {

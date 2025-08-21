@@ -3,13 +3,13 @@ import { useNavigate, useLocation } from "react-router-dom";
 function SideNav() {
   const navigate = useNavigate();
   const location = useLocation();
-  const user = JSON.parse(localStorage.getItem("user")) || {
+  const user = JSON.parse(sessionStorage.getItem("user")) || {
     username: "Gäst",
     avatar: "https://i.pravatar.cc/50?img=10",
   };
 
   const logout = () => {
-    localStorage.clear();
+    sessionStorage.clear();
     navigate("/login");
   };
 

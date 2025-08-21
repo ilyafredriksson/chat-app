@@ -14,7 +14,7 @@ function Login() {
     });
     const data = await res.json();
     if (data.csrfToken) {
-      localStorage.setItem("csrfToken", data.csrfToken);
+      sessionStorage.setItem("csrfToken", data.csrfToken);
       return data.csrfToken;
     }
     return null;
@@ -25,7 +25,7 @@ function Login() {
     setError("");
     try {
       await getCsrfToken();
-      const csrfToken = localStorage.getItem("csrfToken");
+      const csrfToken = sessionStorage.getItem("csrfToken");
       if (!csrfToken) {
         setError("Kunde inte hämta CSRF-token. Ladda om sidan och försök igen.");
         return;
@@ -43,8 +43,8 @@ function Login() {
       }
       const token = data.token;
       const decoded = jwtDecode(token);
-      localStorage.setItem("token", token);
-      localStorage.setItem(
+      sessionStorage.setItem("token", token);
+      sessionStorage.setItem(
         "user",
         JSON.stringify({
           id: decoded.id,
